@@ -1,0 +1,156 @@
+body {    
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav li {
+    padding: 17px 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav li a:hover {
+    color: gold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: rgb(0, 0, 0);
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav li {
+        padding: 10px;
+    }
+
+    .nav li a {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.TGF {
+    font-family: "Bonheur Royale", cursive;
+    color: gold;
+    font-size: 8vw;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sitting, .food, .coffee, .celebrations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sitting img, .food img, .coffee img, .celebrations img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .TGF {
+        font-size: 12vw;
+    }
+    
+    .footer-right {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
